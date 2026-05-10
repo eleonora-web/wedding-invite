@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="ka">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#735c00",
+            "primary-fixed": "#cde5ff",
+            "on-error": "#ffffff",
+            "outline-variant": "#c2c7ce",
+            "on-surface": "#1a1c1a",
+            "surface": "#faf9f6",
+            "tertiary-fixed-dim": "#cdc6b8",
+            "surface-container-highest": "#e3e2e0",
+            "inverse-surface": "#2f312f",
+            "on-tertiary-fixed-variant": "#4b463c",
+            "outline": "#73777e",
+            "on-tertiary-container": "#555045",
+            "secondary-fixed": "#ffe088",
+            "surface-variant": "#e3e2e0",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#294964",
+            "on-tertiary": "#ffffff",
+            "primary": "#42617d",
+            "on-primary-container": "#34536f",
+            "secondary-container": "#fed65b",
+            "tertiary-fixed": "#e9e2d3",
+            "on-secondary-fixed-variant": "#574500",
+            "surface-bright": "#faf9f6",
+            "surface-container": "#efeeeb",
+            "on-secondary-container": "#745c00",
+            "on-primary-fixed": "#001d32",
+            "primary-container": "#a7c7e7",
+            "tertiary-container": "#cac3b5",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#f2f1ee",
+            "surface-dim": "#dbdad7",
+            "on-background": "#1a1c1a",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#aacaea",
+            "background": "#faf9f6",
+            "tertiary": "#635e53",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#e9c349",
+            "on-secondary-fixed": "#241a00",
+            "surface-container-low": "#f4f3f1",
+            "on-surface-variant": "#42474d",
+            "inverse-primary": "#aacaea",
+            "surface-tint": "#42617d",
+            "surface-container-high": "#e9e8e5",
+            "on-tertiary-fixed": "#1e1b13",
+            "error-container": "#ffdad6",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {},
+          "fontFamily": {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .bg-brush-texture {
+      background-image: radial-gradient(circle at 2px 2px, rgba(66, 97, 125, 0.05) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+  <!-- Top Navigation Anchor -->
+  <header
+    class="fixed top-0 w-full z-50 bg-[#faf9f6]/70 dark:bg-stone-900/70 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full">
+    <div class="flex items-center">
+      <span
+        class="material-symbols-outlined text-[#42617d] dark:text-[#a7c7e7] cursor-pointer hover:opacity-80 transition-opacity">menu</span>
+    </div>
+    <div class="w-6"></div> <!-- Spacer for centering -->
+  </header>
+  <main class="pt-24 pb-32 overflow-x-hidden bg-brush-texture">
+    <!-- Section 1: Countdown -->
+    <section
+      class="px-6 mb-20 flex flex-col items-center animate-on-scroll opacity-0 translate-y-8 transition-all duration-[1200ms] ease-out delay-100">
+      <h2 class="font-headline text-3xl text-center mb-10 text-on-surface tracking-wide">ქორწილამდე დარჩა</h2>
+      <div class="grid grid-cols-4 gap-3 w-full max-w-md">
+        <!-- Days -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-full aspect-square bg-surface-container-lowest rounded-2xl flex items-center justify-center shadow-[0_10px_30px_rgba(66,97,125,0.04)] border border-outline-variant/10">
+            <span class="text-3xl font-headline text-primary">12</span>
+          </div>
+          <span class="mt-2 text-[10px] font-bold tracking-[0.2em] text-on-surface-variant/60 uppercase">დღე</span>
+        </div>
+        <!-- Hours -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-full aspect-square bg-secondary-container/20 rounded-2xl flex items-center justify-center shadow-[0_10px_30px_rgba(115,92,0,0.05)] border border-secondary-container/30">
+            <span class="text-3xl font-headline text-on-secondary-container">08</span>
+          </div>
+          <span class="mt-2 text-[10px] font-bold tracking-[0.2em] text-on-surface-variant/60 uppercase">საათი</span>
+        </div>
+        <!-- Minutes -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-full aspect-square bg-surface-container-lowest rounded-2xl flex items-center justify-center shadow-[0_10px_30px_rgba(66,97,125,0.04)] border border-outline-variant/10">
+            <span class="text-3xl font-headline text-primary">45</span>
+          </div>
+          <span class="mt-2 text-[10px] font-bold tracking-[0.2em] text-on-surface-variant/60 uppercase">წუთი</span>
+        </div>
+        <!-- Seconds -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-full aspect-square bg-surface-container-lowest rounded-2xl flex items-center justify-center shadow-[0_10px_30px_rgba(66,97,125,0.04)] border border-outline-variant/10">
+            <span class="text-3xl font-headline text-primary">19</span>
+          </div>
+          <span class="mt-2 text-[10px] font-bold tracking-[0.2em] text-on-surface-variant/60 uppercase">წამი</span>
+        </div>
+      </div>
+    </section>
+    <!-- Story Text Section -->
+    <section
+      class="max-w-md mx-auto text-center px-4 mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-[1200ms] ease-out delay-[150ms]">
+      <span class="material-symbols-outlined text-[#8d4774]/70 text-4xl mb-6 drop-shadow-sm"
+        style="font-variation-settings: 'FILL' 1;">favorite</span>
+      <p class="font-serif text-[15px] md:text-base leading-[2.2] text-on-surface-variant/90 italic">
+        „ყველაფერი თითქოს შემთხვევით დაიწყო — <br>
+        ერთი შეხვედრით, ერთი ღიმილით, ერთი უბრალო სიტყვით... <br>
+        იყო დღეები, როცა ჯერ კიდევ არ ვიცოდით, <br>
+        რომ ერთმანეთის ისტორიაში მთავარი თავი უნდა დაგვეწერა. <br>
+        და აი, ახლა — ჩვენი პატარა ამბავი <br>
+        დიდ სიყვარულად გადაიქცა. <br><br>
+
+        დღეს, როცა ამ გზას ერთად ვაგრძელებთ, <br>
+        გვსურს, თქვენც იყოთ ჩვენი ბედნიერების ნაწილი.“
+      </p>
+      <div
+        class="mt-10 mb-2 text-center animate-on-scroll opacity-0 translate-y-8 transition-all duration-[1200ms] ease-out delay-[300ms]">
+        <p class="font-headline italic text-lg text-on-surface-variant">
+          სიყვარულით, ედი &amp; ნინო <span
+            class="material-symbols-outlined text-[#8d4774] text-[16px] align-middle drop-shadow-sm ml-1"
+            style="font-variation-settings: 'FILL' 1;">favorite</span>
+        </p>
+      </div>
+    </section>
+    <!-- Section 2: Event Schedule -->
+    <section
+      class="px-6 mb-12 animate-on-scroll opacity-0 translate-y-8 transition-all duration-[1200ms] ease-out delay-200">
+      <div class="flex items-center justify-between mb-12">
+        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+        <h2 class="font-headline text-xl px-4 text-on-surface-variant/80 italic tracking-widest uppercase text-sm">
+          განრიგი</h2>
+        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+      </div>
+      <div class="space-y-6 max-w-md mx-auto">
+        <!-- Church Ceremony -->
+        <div
+          class="group relative bg-surface-container-low p-8 rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all hover:shadow-[0_10px_40px_rgba(66,97,125,0.06)] hover:-translate-y-1 overflow-hidden cursor-pointer"
+          onclick="openModal('ჯვრისწერა')">
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl"></div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-between items-start">
+              <span class="material-symbols-outlined text-primary text-3xl"
+                style="font-variation-settings: 'FILL' 0;">church</span>
+              <span class="font-label text-lg font-bold tracking-widest text-primary opacity-80">12:00</span>
+            </div>
+            <div>
+              <h3 class="font-headline text-2xl text-on-surface mb-1">ჯვრისწერა</h3>
+              <p class="text-on-surface-variant/70 text-sm leading-relaxed">მეტეხის ტაძარი, თბილისი</p>
+            </div>
+          </div>
+        </div>
+        <!-- Registry -->
+        <div
+          class="group relative bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all hover:shadow-[0_10px_40px_rgba(66,97,125,0.06)] hover:-translate-y-1 border border-outline-variant/5 cursor-pointer"
+          onclick="openModal('ხელის მოწერა')">
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-between items-start">
+              <span class="material-symbols-outlined text-secondary text-3xl"
+                style="font-variation-settings: 'FILL' 1;">favorite</span>
+              <span class="font-label text-lg font-bold tracking-widest text-secondary opacity-80">16:00</span>
+            </div>
+            <div>
+              <h3 class="font-headline text-2xl text-on-surface mb-1">ხელის მოწერა</h3>
+              <p class="text-on-surface-variant/70 text-sm leading-relaxed">მთაწმინდის ქორწინების სახლი</p>
+            </div>
+          </div>
+        </div>
+        <!-- Dinner -->
+        <div
+          class="group relative bg-surface-container-low p-8 rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all hover:shadow-[0_10px_40px_rgba(66,97,125,0.06)] hover:-translate-y-1 cursor-pointer"
+          onclick="openModal('ვახშამი')">
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary-container/10 rounded-full blur-3xl"></div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-between items-start">
+              <span class="material-symbols-outlined text-primary text-3xl"
+                style="font-variation-settings: 'FILL' 0;">restaurant</span>
+              <span class="font-label text-lg font-bold tracking-widest text-primary opacity-80">19:00</span>
+            </div>
+            <div>
+              <h3 class="font-headline text-2xl text-on-surface mb-1">ვახშამი</h3>
+              <p class="text-on-surface-variant/70 text-sm leading-relaxed">რესტორანი „ფუნიკულიორი“, მთაწმინდა</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Visual Anchor: Map Preview -->
+    <section
+      class="px-6 mt-16 max-w-lg mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-[1200ms] ease-out delay-300">
+      <div class="relative w-full h-48 rounded-[2rem] overflow-hidden group">
+        <img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 transition-all duration-700"
+          data-alt="abstract artistic map of old town Tbilisi with golden pin and soft watercolor texture background"
+          data-location="Tbilisi"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSZ_t0gJzhEW_wPV5Y46eOA4y3to5zNWk_GLEbENrhplyk8RL6xr9eV4EmqewMe96OS8fO1upbifOy2IfQ6JFqqfGYu-4nPYT0XICl8h6oybYbOXoFYXMN2vrkK48GQih8Gn_Tiz0z1ApjoGcMN3efjpZMiyFPtffSa7QoVumXOFGTSSP3-KGBVvBA_Q_By7UmCjzf4ZgEx-nlGquKPhr17c2AUvE04Cp8IxotCTay87ja6ho1739iKYir-3saT-6dDbJpFXko" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+        <div
+          class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-surface/90 px-6 py-2 rounded-full shadow-lg backdrop-blur-sm">
+          <span class="material-symbols-outlined text-secondary text-sm">location_on</span>
+          <span class="text-[10px] font-bold tracking-widest uppercase text-on-surface">იხილეთ რუკა</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Bottom Navigation Shell -->
+  <nav
+    class="fixed bottom-0 left-0 w-full flex justify-around items-end pb-6 px-4 bg-[#faf9f6]/70 dark:bg-stone-900/70 backdrop-blur-md z-50 shadow-[0_-10px_40px_rgba(66,97,125,0.06)] rounded-t-[2rem]">
+    <a class="flex flex-col items-center justify-center text-[#42474d] dark:text-[#c2c7ce] opacity-60 hover:scale-105 transition-transform"
+      href="#">
+      <span class="material-symbols-outlined mb-1" data-icon="mail">mail</span>
+      <span class="font-manrope text-[10px] font-bold tracking-[0.1em]">INVITATION</span>
+    </a>
+    <a class="flex flex-col items-center justify-center bg-[#fed65b] dark:bg-[#735c00] text-[#745c00] dark:text-[#fed65b] rounded-full w-12 h-12 mb-1 active:scale-95 transition-all duration-200"
+      href="#">
+      <span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+      <!-- Label hidden for active item based on style instruction for visual focus -->
+    </a>
+  </nav>
+
+  <!-- Modal -->
+  <div id="schedule-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+    <div id="modal-backdrop"
+      class="absolute inset-0 bg-[#1a1c1a]/40 backdrop-blur-sm opacity-0 transition-opacity duration-500 ease-out"
+      onclick="closeModal()"></div>
+    <div id="modal-content-box"
+      class="relative bg-surface rounded-[2rem] p-8 max-w-sm w-full shadow-2xl transform opacity-0 scale-95 translate-y-8 transition-all duration-500 ease-out">
+      <button onclick="closeModal()"
+        class="absolute top-4 right-4 text-[#42474d] hover:text-[#1a1c1a] p-2 transition-colors">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div id="modal-text-content" class="text-center font-body">
+        <!-- Modal text goes here -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(title) {
+      const modal = document.getElementById('schedule-modal');
+      const backdrop = document.getElementById('modal-backdrop');
+      const contentBox = document.getElementById('modal-content-box');
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      document.getElementById('modal-text-content').innerHTML = `
+      <h3 class="font-headline text-2xl text-[#1a1c1a] mb-4">${title}</h3>
+      <p class="text-[#42474d]/70 text-sm leading-relaxed mt-4">
+        აქ ჩაიწერება დეტალური ინფორმაცია...
+      </p>
+    `;
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          backdrop.classList.remove('opacity-0');
+          backdrop.classList.add('opacity-100');
+          contentBox.classList.remove('opacity-0', 'scale-95', 'translate-y-8');
+          contentBox.classList.add('opacity-100', 'scale-100', 'translate-y-0');
+        });
+      });
+    }
+
+    function closeModal() {
+      const backdrop = document.getElementById('modal-backdrop');
+      const contentBox = document.getElementById('modal-content-box');
+
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0');
+      contentBox.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
+      contentBox.classList.add('opacity-0', 'scale-95', 'translate-y-8');
+
+      setTimeout(() => {
+        const modal = document.getElementById('schedule-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }, 500);
+    }
+
+    // Scroll animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-8');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05 });
+
+      document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+
+</html>
