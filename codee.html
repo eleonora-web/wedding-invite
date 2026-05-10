@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ka">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>E&N</title>
+  <!-- Open Graph / Facebook / Messenger -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eleonora-web.github.io/wedding-invite/introduction/codee.html" />
+  <meta property="og:title" content="ედი & ნინო - ქორწილის მოსაწვევი" />
+  <meta property="og:description" content="სიყვარული არის ის, რაც გზას გვიჩვენებს სახლისკენ. შემოგვიერთდით ჩვენს განსაკუთრებულ დღეს!" />
+  <meta property="og:image" content="https://eleonora-web.github.io/wedding-invite/introduction/screen.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-bright": "#fbf9f5",
+            "outline-variant": "#b2b2ad",
+            "on-tertiary": "#fff7f8",
+            "on-secondary-container": "#3d5763",
+            "tertiary-dim": "#7f3b67",
+            "surface-container": "#efeee9",
+            "secondary-fixed": "#ceeaf8",
+            "tertiary": "#8d4774",
+            "on-tertiary-fixed": "#4d103c",
+            "secondary-container": "#ceeaf8",
+            "background": "#fbf9f5",
+            "error-container": "#fa7150",
+            "on-secondary-fixed-variant": "#47616d",
+            "surface-dim": "#dadad4",
+            "on-primary": "#fff8ef",
+            "on-error-container": "#671200",
+            "primary-fixed": "#f5ce53",
+            "error-dim": "#821a01",
+            "secondary-dim": "#3d5763",
+            "surface-container-highest": "#e3e3dd",
+            "outline": "#7a7b76",
+            "inverse-on-surface": "#9e9d99",
+            "on-tertiary-container": "#662652",
+            "on-surface-variant": "#5e605b",
+            "primary": "#745c00",
+            "error": "#aa371c",
+            "surface-variant": "#e3e3dd",
+            "primary-dim": "#665100",
+            "secondary-fixed-dim": "#c0dbea",
+            "inverse-surface": "#0e0e0d",
+            "tertiary-fixed": "#ffa9dc",
+            "on-error": "#fff7f6",
+            "secondary": "#49636f",
+            "surface-container-high": "#e9e8e3",
+            "on-surface": "#31332f",
+            "primary-fixed-dim": "#e6c047",
+            "surface-tint": "#745c00",
+            "primary-container": "#f5ce53",
+            "on-background": "#31332f",
+            "tertiary-container": "#ffa9dc",
+            "surface-container-low": "#f5f3ef",
+            "on-primary-fixed": "#413200",
+            "on-secondary-fixed": "#2b4450",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#f3faff",
+            "inverse-primary": "#f5ce53",
+            "surface": "#fbf9f5",
+            "on-tertiary-fixed-variant": "#712f5b",
+            "on-primary-container": "#584500",
+            "tertiary-fixed-dim": "#f09cce",
+            "on-primary-fixed-variant": "#634e00"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .envelope-shadow {
+      filter: drop-shadow(0 20px 40px rgba(49, 51, 47, 0.08));
+    }
+
+    .wax-seal-depth {
+      box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+  <style>
+    @keyframes intro-enter {
+      from {
+        opacity: 0;
+        transform: scale(0.98);
+        filter: blur(8px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+        filter: blur(0);
+      }
+    }
+
+    body {
+      min-height: max(884px, 100dvh);
+      animation: intro-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-surface-bright font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+  <!-- Top Navigation (Shell suppressed for Transactional Splash Screen) -->
+  <main class="min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
+    <!-- Artistic Brush Stroke Overlay -->
+    <div
+      class="absolute -top-20 -left-20 w-96 h-96 opacity-10 pointer-events-none rotate-12 bg-tertiary-container blur-[80px] rounded-full">
+    </div>
+    <div
+      class="absolute -bottom-20 -right-20 w-80 h-80 opacity-10 pointer-events-none -rotate-12 bg-secondary-container blur-[80px] rounded-full">
+    </div>
+    <!-- Header: Couples Names -->
+    <header class="mb-12 text-center">
+      <h1 class="font-headline text-3xl italic tracking-tighter text-secondary">
+        ედი &amp; ნინო
+      </h1>
+      <div class="w-12 h-[1px] bg-outline-variant/30 mx-auto mt-4"></div>
+    </header>
+    <!-- Envelope Container -->
+    <div class="relative group cursor-pointer transition-transform duration-500 hover:scale-[1.02] active:scale-[0.98]"
+      onclick="transitionToMain()">
+      <!-- The Envelope Body -->
+      <div
+        class="relative w-[340px] md:w-[460px] aspect-[4/3] bg-surface-container-low rounded-xl envelope-shadow overflow-hidden p-1">
+        <!-- Gold Foil Decorative Edge -->
+        <div class="absolute inset-0 border-[3px] border-primary-fixed/20 m-4 pointer-events-none"></div>
+        <!-- Envelope Flap Visuals -->
+        <div class="absolute top-0 left-0 w-full h-1/2">
+          <svg class="w-full h-full drop-shadow-sm" fill="none" viewbox="0 0 460 230"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0 H460 V20 L230 140 L0 20 V0Z" fill="#efeee9"></path>
+            <path d="M0 0 L230 145 L460 0" stroke="#f5ce53" stroke-opacity="0.3" stroke-width="1.5"></path>
+          </svg>
+        </div>
+        <!-- Deep Burgundy Wax Seal -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+          <div
+            class="w-16 h-16 rounded-full bg-tertiary-dim wax-seal-depth border-2 border-tertiary flex items-center justify-center relative overflow-hidden">
+            <!-- Texture of wax -->
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,#ffffff,transparent)]"></div>
+            <!-- Seal Icon -->
+            <span class="material-symbols-outlined text-primary-fixed text-3xl"
+              style="font-variation-settings: 'FILL' 1;">
+              favorite
+            </span>
+          </div>
+        </div>
+        <!-- Subtle Paper Texture Overlay -->
+        <div class="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAoDu9wDksfEcw1YW5OSHT6bL7yu7xBpcIFslyRrplZzge6gW6CRn_BIeo_3-h1n2c0u-n5Tuphy9U6SKCgWElLTMDMOw1bBZHqHxeHGusbhda6sCJLBvu5Z_C_wjUm7RQKV2i9lrbgbly9xDxi5S8NcmpAAbdBdkZJxV9fYabQEDpWACNFbpT8ugPaymXRiEUC9sguL-tvNmxSURzdCI-HOxYgzve-CYSN1DpDbiHKKHZgqZGajynuOzYZlE2L3_t48fDya-XD')">
+        </div>
+      </div>
+      <!-- Floating Label -->
+      <div class="mt-16 text-center">
+        <span class="font-label text-[10px] tracking-[0.25rem] text-secondary-dim font-extrabold uppercase opacity-60">
+          TAP TO OPEN INVITATION
+        </span>
+      </div>
+    </div>
+    <!-- Calligraphic Quote -->
+    <div class="mt-12 px-6 max-w-[280px] text-center">
+      <p class="font-headline italic text-on-surface-variant/60 text-[13px] md:text-sm leading-loose">
+        "სიყვარული არის ის, რაც გზას გვიჩვენებს სახლისკენ"
+      </p>
+    </div>
+  </main>
+  <!-- Bottom Navigation Shell (Suppressed: Task-Focused Screen) -->
+  <!-- Wax Seal FAB (Suppressed: Transactional Screen) -->
+  <script>
+    function transitionToMain() {
+      const mainWrap = document.querySelector('main');
+      mainWrap.style.transition = 'opacity 0.7s ease-in-out, transform 0.7s ease-in-out, filter 0.7s ease-in-out';
+      mainWrap.style.opacity = '0';
+      mainWrap.style.transform = 'scale(1.05)';
+      mainWrap.style.filter = 'blur(8px)';
+      
+      setTimeout(() => {
+        window.location.href = '../main/code.html';
+      }, 700);
+    }
+  </script>
+</body>
+
+</html>
